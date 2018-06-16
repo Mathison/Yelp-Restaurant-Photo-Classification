@@ -9,6 +9,8 @@ This project is to automatically tag restaurants with nine labels from a bag of 
 
 * `Train_model.ipynb` Implementing feature extraction discribed in section 2.1 of our report and save feature vectors. It also trains our * model discribed in section 2.2 of our report and generate training progress images ploted in section 5.1.1 of our report.
 * `ViewPhotoLabels.ipynb` Use our pretrained model to label individual images and show images ploted in section 5.2.1 of our report
+* Our training data are stored in the /datasets/ee285s-public/yelpRestaurants/ directory of the server which should be clone to the code    * directory's folder /yelpRestaurants/
+* Our pretrained model is uploaded to the dropbox, link:https://www.dropbox.com/s/cl1enggjwc2p185/saved_model_1.pt?dl=0. It should be       put in the code directory
 
 ## Authors
 Jiawei Li, Yitian Tong, Zhiling Liu, Shiyi Wang
