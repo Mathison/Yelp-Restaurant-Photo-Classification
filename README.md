@@ -7,13 +7,18 @@ This project is to automatically tag restaurants with nine labels from a bag of 
 ## Code organization
 
 * `Model_SVM.ipynb` This is the first model we tried, using PCA+SVM method, we use this as a baseline for our model.
-* `Train_model.ipynb` Implementing feature extraction discribed in section 2.1 of our report and save feature vectors. It also trains our * model discribed in section 2.2 of our report and generate training progress images ploted in section 5.1.1 of our report.
+* `Train_model.ipynb` Implementing feature extraction discribed in section 2.1 of our report and save feature vectors. It also trains our * model discribed in section 2.2 of our report and generate training progress images ploted in section 5.1.1 of our report. To test this file, there are several things to be noticed:
 
-To test this file, there are several things to be noticed:
+*** 1:When extracting the feature, you can choose to run "get_total_feature(train_num,test_num,img_num,vgg)", this method is much flexible but could waste a lot of time, since you need to run that every time you train a model; 
 
-*** 1:After running all the function you can choose to run "get_total_feature(train_num,test_num,img_num,vgg)" to get the feature and corresponding label, train_num represent the number of business_id we want for training,test_num represent the number of business_id we want for testing ,img_num represent the maximum number of images we want to get from each business,vgg is the pretrain model we choose, this method is much flexible but could waste a lot of time, since you need to run that every time you train a model;
+* train_num represent the number of business_id we want for training;
+* test_num represent the number of business_id we want for testing;
+* img_num represent the maximum number of images we want to get from each business;
+* vgg is the pretrain model we choose
 
-*** 2:Another way we provide is as what we specified in section 3, we use save_data(batch,img_num,vgg) to save all the feature in a file, batch represent the number of business we want in a file, for example, if batch = 100, there are total 2000 business, therefore it will produce 20 files with features after running, then you can use load_data(train_num,test_num) to load feature every time you train a new model, here train_num,test_num means the number of files we want
+*** 2: Another way we provide is as what we specified in section 3, we use save_data(batch,img_num,vgg) to save all the feature in a file,then you can use load_data(train_num,test_num) to load feature every time you train a new model, here train_num,test_num means the number of files we want
+
+* batch represent the number of business we want in a file, for example, if batch = 100, there are total 2000 business, therefore it will produce 20 files with features after running.
 
 *** 3:model_name is the name of the model we saved, please keep that fixed with the model_name we loaded in 'ViewPhotoLabels.ipynb'
 
