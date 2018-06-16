@@ -26,7 +26,8 @@ This project is to automatically tag restaurants with nine labels from a bag of 
      *batch represent the number of business we want in a file, if batch = 100, there are total 2000 business, it will produce 20 files with features inside.*
 
     
-* `ViewPhotoLabels.ipynb` Use our pretrained model to label individual images and show images ploted in section 5.2.1 of our report
+* `ViewPhotoLabels.ipynb` Use our pretrained model to label individual images and show images ploted in section 5.2.1 of our report.
+You can specify the business unit you want to look into and the number images you want to show by changing 'business_id' and 'img_num' for the function: sample_map(model,model_extractfeatures,business_id,img_num)
 * Our training data are stored in the /datasets/ee285s-public/yelpRestaurants/ directory of the server which should be clone to the code    * directory's folder /yelpRestaurants/
 * Our pretrained model is uploaded to the dropbox, link:https://www.dropbox.com/s/cl1enggjwc2p185/saved_model_1.pt?dl=0. It should be       put in the code directory
 
