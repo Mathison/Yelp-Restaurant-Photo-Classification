@@ -7,7 +7,7 @@ This project is to automatically tag restaurants with nine labels from a bag of 
 ## Code organization
 
 * `Model_SVM.ipynb` This is the first model we tried, using PCA+SVM method, we use this as a baseline for our model.
-* `Train_model.ipynb` Implementing feature extraction discribed in section 2.1 of our report and save feature vectors. It also trains our * model discribed in section 2.2 of our report and generate training progress images ploted in section 5.1.1 of our report. To test this file, there are several things to be noticed:
+* `Train_model.ipynb` Implementing feature extraction discribed in section 2.1 of our report and save feature vectors. It also trains our  model discribed in section 2.2 of our report and generate training progress images ploted in section 5.1.1 of our report. To test this file, there are several things to be noticed:
 
     1: When extracting the feature, you can choose to run "get_total_feature(train_num,test_num,img_num,vgg)", this method is much flexible but could waste a lot of time, since you need to run that every time you train a model; 
 
@@ -28,8 +28,8 @@ This project is to automatically tag restaurants with nine labels from a bag of 
     
 * `ViewPhotoLabels.ipynb` Use our pretrained model to label individual images and show images ploted in section 5.2.1 of our report.
 You can specify the business unit you want to look into and the number images you want to show by changing the two parameters 'BUSID' and 'NUM' respectively.
-* Our training data are stored in the /datasets/ee285s-public/yelpRestaurants/ directory of the server which should be clone to the code    * directory's folder /yelpRestaurants/
-* Our pretrained model is uploaded to the dropbox, link:https://www.dropbox.com/s/cl1enggjwc2p185/saved_model_1.pt?dl=0. It should be       put in the code directory
+* Our training data are stored in the /datasets/ee285s-public/yelpRestaurants/ directory of the server which would be clone to the code path's folder /yelpRestaurants/
+* Our pretrained model is uploaded to the dropbox, link:https://www.dropbox.com/s/cl1enggjwc2p185/saved_model_1.pt?dl=0. It would be     directely put in the code path
 
 ## Authors
 Jiawei Li, Yitian Tong, Zhiling Liu, Shiyi Wang
