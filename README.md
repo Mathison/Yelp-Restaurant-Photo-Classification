@@ -11,14 +11,14 @@ This project is to automatically tag restaurants with nine labels from a bag of 
 
  * 1:When extracting the feature, you can choose to run "get_total_feature(train_num,test_num,img_num,vgg)", this method is much flexible but could waste a lot of time, since you need to run that every time you train a model; 
 
- train_num represent the number of business_id we want for training;
- test_num represent the number of business_id we want for testing;
- img_num represent the maximum number of images we want to get from each business;
- vgg is the pretrain model we choose
+ *train_num represent the number of business_id we want for training;*
+ *test_num represent the number of business_id we want for testing;*
+ *img_num represent the maximum number of images we want to get from each business;*
+ *vgg is the pretrain model we choose*
 
- * 2: Another way we provide is as what we specified in section 3, we use save_data(batch,img_num,vgg) to save all the feature in a file,then you can use load_data(train_num,test_num) to load feature every time you train a new model, here train_num,test_num means the number of files we want
+ * 2: Another way we provide is as what we specified in section 3, we use save_data(batch,img_num,vgg) to save all the feature in a file,then you can use load_data(train_num,test_num) to load feature every time you train a new model, however this could took a long time to run the first time, here train_num,test_num means the number of files we want.
 
- batch represent the number of business we want in a file, for example, if batch = 100, there are total 2000 business, therefore it will produce 20 files with features after running.
+ *batch represent the number of business we want in a file, for example, if batch = 100, there are total 2000 business, therefore it will produce 20 files with features after running.*
 
  * 3:model_name is the name of the model we saved, please keep that fixed with the model_name we loaded in 'ViewPhotoLabels.ipynb'
 
