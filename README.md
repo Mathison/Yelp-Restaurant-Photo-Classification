@@ -6,9 +6,9 @@ This project is to automatically tag restaurants with nine labels from a bag of 
 
 ## Code organization
 
-* `FeatureExtraction.ipynb` Implementing feature extraction discriped in section 2.1 of our report and save feature vectors
-* `Train_model.ipynb` Train our model discriped in section 2.2 of our report and generate training progress images
-* `ViewPhotoLabels.ipynb` Use our pretrained model to label individual images and show images ploted in section 5.2.1 of our project
+* `FeatureExtraction.ipynb` Implementing feature extraction discribed in section 2.1 of our report and save feature vectors
+* `Train_model.ipynb` Train our model discribed in section 2.2 of our report and generate training progress images
+* `ViewPhotoLabels.ipynb` Use our pretrained model to label individual images and show images ploted in section 5.2.1 of our report
 
 ## Authors
 Jiawei Li, Yitian Tong, Zhiling Liu, Shiyi Wang
