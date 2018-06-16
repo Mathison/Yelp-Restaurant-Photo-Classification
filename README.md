@@ -7,6 +7,7 @@ This project is to automatically tag restaurants with nine labels from a bag of 
 ## Code organization
 
 * `xxxx.ipynb` Implementing XX
+There are many files in this direction, most of them are testing files
 
 ## Authors
 Jiawei Li, Yitian Tong, Zhiling Liu, Shiyi Wang
